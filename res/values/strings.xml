@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ConstructNote</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="tinh_toan">Tính toán</string>
+    <string name="bang_tra">Bảng tra</string>
+    <string name="tieu_chuan">Tiêu chuẩn</string>
+</resources>
