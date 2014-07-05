@@ -14,4 +14,12 @@ public class TieuChuanFragment extends SherlockFragment {
 			Bundle savedInstanceState) {
 		return inflater.inflate(R.layout.tieuchuan_fragment, container, false);
 	}
+	
+	@Override 
+	public void onSaveInstanceState(Bundle outState) 
+	{
+	//first saving my state, so the bundle wont be empty.
+	outState.putString("WORKAROUND_FOR_BUG_19917_KEY",  "WORKAROUND_FOR_BUG_19917_VALUE");
+	super.onSaveInstanceState(outState);
+	}
 }

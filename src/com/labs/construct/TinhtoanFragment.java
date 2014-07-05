@@ -14,7 +14,15 @@ public class TinhtoanFragment extends SherlockFragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.tinhtoan_fragment, container, false);
-	    
+
 		return view;
+	}
+
+	@Override 
+	public void onSaveInstanceState(Bundle outState) 
+	{
+		//first saving my state, so the bundle wont be empty.
+		outState.putString("WORKAROUND_FOR_BUG_19917_KEY",  "WORKAROUND_FOR_BUG_19917_VALUE");
+		super.onSaveInstanceState(outState);
 	}
 }
