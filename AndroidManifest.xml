@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.labs.construct.trathep.TraThepV"
+            android:name="com.labs.construct.trathep.TraThep"
             android:label="@string/app_name" >
         </activity>
     </application>
