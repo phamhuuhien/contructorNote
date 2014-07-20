@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MyArrayAdapter extends ArrayAdapter<ThepListObject> {
@@ -28,9 +29,10 @@ public class MyArrayAdapter extends ArrayAdapter<ThepListObject> {
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		View rowView = inflater.inflate(R.layout.list_item, parent, false);
 		TextView text = (TextView) rowView.findViewById(R.id.title);
-		
+		ImageView icon = (ImageView) rowView.findViewById(R.id.icon);
 		ThepListObject tmp = values.get(position);
 		text.setText(tmp.title);
+		icon.setImageResource(tmp.icon);
 
 		return rowView;
 	}

@@ -12,6 +12,8 @@ import com.labs.construct.adapter.ViewPagerAdapter;
 
 public class MainActivity extends SherlockFragmentActivity {
 
+	public static int THEME = R.style.Theme_Sherlock_Light;
+	
 	public static final String TINH_TOAN = "Tinh Toan";
 	public static final String BANG_TRA = "Bang tra";
 	public static final String TIEU_CHUAN = "Tieu chuan";
@@ -23,6 +25,7 @@ public class MainActivity extends SherlockFragmentActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		setTheme(THEME);
 		super.onCreate(savedInstanceState);
 		// Get the view from activity_main.xml
 		setContentView(R.layout.activity_main);

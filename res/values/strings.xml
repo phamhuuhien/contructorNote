@@ -17,5 +17,7 @@
     
     <string name="so_hieu">Số hiệu</string>
     <string name="code">Code</string>
+    
+    <color name="main_blue">#213284</color>
 
 </resources>

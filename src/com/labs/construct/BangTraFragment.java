@@ -28,12 +28,14 @@ public class BangTraFragment extends SherlockFragment {
 		final ListView listview = (ListView) view.findViewById(R.id.listview);
 		String[] values = new String[] { "Tra thep hinh V", "Tra thep hinh U" };
 		String[] assets = new String[] {"ThepHinhV.csv", "ThepHinhU.csv"};
+		int[] icons = new int[] {R.drawable.thep_v, R.drawable.thep_u};
 
 		final ArrayList<ThepListObject> list = new ArrayList<ThepListObject>();
 		for (int i = 0; i < values.length; ++i) {
 			ThepListObject obj = new ThepListObject();
 			obj.title = values[i];
 			obj.asset = assets[i];
+			obj.icon = icons[i];
 			list.add(obj);
 		}
 
@@ -44,9 +46,6 @@ public class BangTraFragment extends SherlockFragment {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-//				Toast.makeText(getApplicationContext(),
-//						"Click ListItem Number " + position, Toast.LENGTH_LONG)
-//						.show();
 				ThepListObject obj = ((MyArrayAdapter)parent.getAdapter()).getItem(position);
 				Intent intent = new Intent(getActivity(), TraThep.class);
 				intent.putExtra(ASSET_LINK, obj.asset);
