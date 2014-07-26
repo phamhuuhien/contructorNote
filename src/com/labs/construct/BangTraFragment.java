@@ -26,10 +26,10 @@ public class BangTraFragment extends SherlockFragment {
 		View view = inflater.inflate(R.layout.bangtra_fragment, container, false);
 
 		final ListView listview = (ListView) view.findViewById(R.id.listview);
-		String[] values = new String[] { "Tra thep hinh V", "Tra thep hinh U" };
-		String[] assets = new String[] {"ThepHinhV.csv", "ThepHinhU.csv"};
-		int[] icons = new int[] {R.drawable.thep_v, R.drawable.thep_u};
+		String[] values = new String[] { "Tra thep hinh V", "Tra thep hinh U", "Tra thep hinh H", "Tra thep hinh L", "Tra thep hinh I", "Tra thep hinh T" };
+		String[] assets = new String[] {"ThepHinhV.csv", "ThepHinhU.csv", "ThepHinhH.csv", "ThepHinhL.csv", "ThepHinhI.csv", "ThepHinhT.csv" };
 
+		int[] icons = new int[] {R.drawable.thep_v, R.drawable.thep_u, R.drawable.thep_h, R.drawable.thep_l, R.drawable.thep_i , R.drawable.thep_t};
 		final ArrayList<ThepListObject> list = new ArrayList<ThepListObject>();
 		for (int i = 0; i < values.length; ++i) {
 			ThepListObject obj = new ThepListObject();
